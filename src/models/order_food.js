@@ -15,6 +15,7 @@ export default class order_food extends Model {
     food_id: {
       type: DataTypes.INTEGER,
       allowNull: true,
+      primaryKey: true,
       references: {
         model: 'food',
         key: 'food_id'

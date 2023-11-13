@@ -1,11 +1,11 @@
 import express from "express";
-import mysql from "mysql2"
-import { routes } from "./src/routes/resRoutes.js";
+import rootRoutes from "./src/routes/rootRoutes.js";
+
 
 const app = express();
 
 app.use(express.json())
-app.use(routes)
+app.use(rootRoutes)
 app.listen(8080)
 
 

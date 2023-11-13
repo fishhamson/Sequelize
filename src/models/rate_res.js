@@ -7,6 +7,7 @@ export default class rate_res extends Model {
     user_id: {
       type: DataTypes.INTEGER,
       allowNull: true,
+      primaryKey: true,
       references: {
         model: 'users',
         key: 'user_id'
@@ -15,6 +16,7 @@ export default class rate_res extends Model {
     res_id: {
       type: DataTypes.INTEGER,
       allowNull: true,
+      primaryKey: true,
       references: {
         model: 'restaurant',
         key: 'res_id'
